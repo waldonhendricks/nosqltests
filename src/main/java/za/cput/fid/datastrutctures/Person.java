@@ -2,10 +2,12 @@ package za.cput.fid.datastrutctures;
 
 import org.springframework.cassandra.core.PrimaryKeyType;
 import org.springframework.data.cassandra.mapping.PrimaryKeyColumn;
+import org.springframework.data.cassandra.mapping.Table;
 
 /**
  * Created by Waldon on 9/5/2016.
  */
+@Table
 public class Person {
     @PrimaryKeyColumn(name = "id",  ordinal = 0, type = PrimaryKeyType.PARTITIONED)
     private String id;

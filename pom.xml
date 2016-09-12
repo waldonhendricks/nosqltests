@@ -15,6 +15,7 @@
     <org.slf4j.version>1.7.12</org.slf4j.version>
     <logback.version>1.1.3</logback.version>
     <org.springframework.version>4.2.5.RELEASE</org.springframework.version>
+    <cassandra-driver-core.version>2.1.5</cassandra-driver-core.version>
   </properties>
 
   <dependencies>
@@ -50,11 +51,11 @@
       <version>4.1.2.RELEASE</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/com.datastax.cassandra/cassandra-driver-core -->
     <dependency>
       <groupId>com.datastax.cassandra</groupId>
       <artifactId>cassandra-driver-core</artifactId>
-      <version>3.1.0</version>
+      <version>${cassandra-driver-core.version}</version>
+      <optional>true</optional>
     </dependency>
 
     <dependency>
